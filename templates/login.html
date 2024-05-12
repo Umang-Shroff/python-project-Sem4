@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration:none;
+            margin-right:15px;
+            color:white;
+            background-color:#007aff;
+            border-radius:10px;
+            transition:.5s;
+            position:relative;
+            left:35vw;
+        }
+        h1{
+            text-align:center;
+            position:relative;
+            left:15px;
+        }
+        #t1{
+            
+            display:inline-block;
+            width:150px;
+            height: 25px;
+            padding:25px;
+            font-weight:bold;
+            font-size:larger;
+            position: relative;
+            top:50px;
+            
+        }
+        #t2{
+            display:inline-block;
+            width:130px;
+            height: 25px;
+            padding:25px;
+            font-weight:bold;
+            font-size:larger;
+            position:relative;
+            top:50px;
+        }
+        a:hover{
+            color:black;
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Welcome User</h1>
+        <a id='t1' href="{{ url_for('predict') }}">Image Uploader</a>
+        <a id='t2' href="{{ url_for('resultinp') }}">Finding Result</a>
+    </div>
+
+</body>
+</html>
